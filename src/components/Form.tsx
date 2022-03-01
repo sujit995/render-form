@@ -93,7 +93,7 @@ const Form = (props: Props) => {
         }
       })}>
         <div className="col-lg-8 p-auto m-auto">
-          <h4 className="col-lg-6 heading">SUBMIT YOUR APPLICATION</h4>
+          <h4 className="col-lg-6 ml-3 heading">SUBMIT YOUR APPLICATION</h4>
           <div className="row d-flex mt-4 m-3">
             <label className="col-lg-3">Resume/CV<span className="star">✱</span></label>
             <div className="col-lg-6 file__wrapper">
@@ -109,7 +109,7 @@ const Form = (props: Props) => {
         </div>
 
         <div className="col-lg-8 p-auto m-auto">
-          <h4 className="col-lg-6 heading">Links</h4>
+          <h4 className="col-lg-6 ml-3 heading">Links</h4>
           <InputForm type='url' label='LinkedIn URL' register={register} error={errors} />
           <InputForm type='url' label='Twitter URL' register={register} error={errors} />
           <InputForm type='url' label='GitHub URL' register={register} error={errors} />
@@ -118,24 +118,24 @@ const Form = (props: Props) => {
         </div>
 
         <div className="col-lg-8 p-auto m-auto">
-          <h4 className="col-lg-6 heading">PREFERRED PRONOUNS</h4>
-          <div className="col-lg-10">
+          <h4 className="col-lg-6 ml-3 heading">PREFERRED PRONOUNS</h4>
+          <div className="col-lg-10 ml-3">
             <label>If you'd like, please share your pronouns with us.</label>
             <input className="form-control shadow-none" placeholder="Type your Response" />
           </div>
         </div>
 
         <div className="col-lg-8 p-auto m-auto pt-4">
-          <h4 className="col-lg-6 heading">PREFERRED PRONOUNS</h4>
-          <div className="col-lg-10">
+          <h4 className="col-lg-6 ml-3 heading">PREFERRED PRONOUNS</h4>
+          <div className="col-lg-10 ml-3">
             <textarea className="form-control rounded-0 shadow-none" id="formControlTextarea" placeholder="Add a cover letter or anything else you want to share." style={{ height: '130px' }} {...register('TextArea', { minLength: 30 })} />
             {errors?.TextArea?.type === 'minLength' && <p style={{ color: 'red' }}>Min Length should be 30 characters</p>}
           </div>
         </div>
 
         <div className="col-lg-8 m-auto">
-          <h4 className="col-lg-10 heading">U.S. EQUAL EMPLOYMENT OPPORTUNITY INFORMATION &nbsp;&nbsp; <span style={{ fontSize: '.8rem', }}>(Completion is voluntary and will not subject you to adverse treatment)</span></h4>
-          <p className="col-lg-10">Our company values diversity. To ensure that we comply with reporting requirements and to learn more about how we can increase diversity in our candidate pool, we invite you to voluntarily provide demographic information in a confidential survey at the end of this application. Providing this information is optional. It will not be accessible or used in the hiring process, and has no effect on your opportunity for employment.</p>
+          <h4 className="col-lg-10 ml-3 heading">U.S. EQUAL EMPLOYMENT OPPORTUNITY INFORMATION &nbsp;&nbsp; <span style={{ fontSize: '.8rem', }}>(Completion is voluntary and will not subject you to adverse treatment)</span></h4>
+          <p className="col-lg-10 ml-3">Our company values diversity. To ensure that we comply with reporting requirements and to learn more about how we can increase diversity in our candidate pool, we invite you to voluntarily provide demographic information in a confidential survey at the end of this application. Providing this information is optional. It will not be accessible or used in the hiring process, and has no effect on your opportunity for employment.</p>
         </div>
 
         <div className="col-lg-8 p-auto m-auto">
