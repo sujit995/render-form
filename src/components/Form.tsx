@@ -134,8 +134,8 @@ const Form = (props: Props) => {
         </div>
 
         <div className="col-lg-8 m-auto">
-          <h4 className="col-lg-10 heading">U.S. EQUAL EMPLOYMENT OPPORTUNITY INFORMATION &nbsp;&nbsp; <span style={{ fontSize: '.8rem', textTransform: 'capitalize' }}>(Completion is voluntary and will not subject you to adverse treatment)</span></h4>
-          <p className="col-lg-10" style={{ lineHeight: '2rem' }}>Our company values diversity. To ensure that we comply with reporting requirements and to learn more about how we can increase diversity in our candidate pool, we invite you to voluntarily provide demographic information in a confidential survey at the end of this application. Providing this information is optional. It will not be accessible or used in the hiring process, and has no effect on your opportunity for employment.</p>
+          <h4 className="col-lg-11 heading">U.S. EQUAL EMPLOYMENT OPPORTUNITY INFORMATION &nbsp;&nbsp; <span style={{ fontSize: '.8rem', textTransform: 'capitalize' }}>(Completion is voluntary and will not subject you to adverse treatment)</span></h4>
+          <p className="col-lg-11" style={{ lineHeight: '2rem' }}>Our company values diversity. To ensure that we comply with reporting requirements and to learn more about how we can increase diversity in our candidate pool, we invite you to voluntarily provide demographic information in a confidential survey at the end of this application. Providing this information is optional. It will not be accessible or used in the hiring process, and has no effect on your opportunity for employment.</p>
         </div>
 
         <div className="col-lg-8 p-auto m-auto">
