@@ -93,7 +93,7 @@ const Form = (props: Props) => {
         }
       })}>
         <div className="col-lg-8 mx-auto">
-          <h4 className="col-lg-6 ml-3 heading">SUBMIT YOUR APPLICATION</h4>
+          <h4 className="col-lg-6 heading">SUBMIT YOUR APPLICATION</h4>
           <div className="row d-flex mx-auto">
             <label className="col-md-3">Resume/CV<span className="star">✱</span></label>
             <div className="col-md-9">
