@@ -94,13 +94,11 @@ const Form = (props: Props) => {
       })}>
         <div className="col-lg-8 mx-auto">
           <h4 className="col-lg-6 heading">SUBMIT YOUR APPLICATION</h4>
-          <div className="row d-flex mx-auto">
-            <label className="col-md-3">Resume/CV<span className="star">✱</span></label>
-            <div className="col-md-9">
+          <div className="row d-flex mt-4 m-3">
+            <label className="col-lg-3">Resume/CV<span className="star">✱</span></label>
+            <div className="col-lg-5 file__wrapper">
+              <button className="upload__button" disabled><BsPaperclip style={{ color: '#515357', marginRight: '13px' }} />{resumeLabel}</button>
               <input className="file__input" type='file' accept='application/pdf' onInput={(e) => onInputChage(e)} {...register('Resume')} />
-              <button className="upload__button" disabled>
-                <BsPaperclip style={{ color: '#515357', marginRight: '13px' }} />{resumeLabel}
-              </button>
               {errors.Resume && <p style={{ color: 'red' }}>{errors.picture.message}</p>}
             </div>
           </div>
@@ -219,8 +217,10 @@ const Form = (props: Props) => {
           />
           {showCaptchaError ? <p style={{ color: 'red' }}>Captcha not clicked</p> : <></>}
         </div>
-        <div className="d-flex mt-4">
-            <input type="submit" className="submit__button mx-auto text-center" value="SUBMIT APPLICATION" />
+        <div className="container bg-light">
+          <div className="col-md-12 text-center mt-4 pt-4">
+            <button type="submit" className="btn">Submit Application</button>
+          </div>
         </div>
       </form>
     </div>
