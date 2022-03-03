@@ -141,7 +141,7 @@ const Form = (props: Props) => {
         <div className="col-lg-8 p-auto m-auto">
           <div className="row d-flex mt-4 m-3">
             <label className="col-lg-3">Gender</label>
-            <select className="col-lg-7 selectpicker" {...register('Gender', { required: true })}>
+            <select className="col-lg-8 selectpicker" {...register('Gender', { required: true })}>
               <option title="Combo 1">Select...</option>
               {
                 gender.map(item => <option value={item}>{item}</option>)
@@ -151,7 +151,7 @@ const Form = (props: Props) => {
           </div>
           <div className="row d-flex mt-4 m-3">
             <label className="col-lg-3">Race&nbsp;&nbsp;<AiOutlineInfoCircle style={{ cursor: 'pointer' }} onClick={() => setRaceDescription(!raceDescription)} /></label>
-            <select className="col-lg-7 selectpicker" {...register('Race')}>
+            <select className="col-lg-8 selectpicker" {...register('Race')}>
               <option>Select ...</option>
               {race.map(item => <option value={item}>{item}</option>)}
             </select>
@@ -202,7 +202,7 @@ const Form = (props: Props) => {
           </div>
           <div className="row d-flex mt-4 m-3">
             <label className="col-lg-3">Veteran Status</label>
-            <select className="col-lg-7 selectpicker" {...register('Veteran')}>
+            <select className="col-lg-8 selectpicker" {...register('Veteran')}>
               <option>Select ...</option>
               {veteran.map(item => <option value={item}>{item}</option>)}
             </select>
