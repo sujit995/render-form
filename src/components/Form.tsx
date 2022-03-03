@@ -94,8 +94,8 @@ const Form = (props: Props) => {
       })}>
         <div className="col-lg-8 mx-auto">
           <h4 className="col-lg-6 heading">SUBMIT YOUR APPLICATION</h4>
-          <div className="row d-flex mt-4 m-3">
-            <label className="col-lg-3">Resume/CV<span className="star">✱</span></label>
+          <div className="row d-flex align-items-center">
+            <label className="col-md-3 ml-2">Resume/CV<span className="star">✱</span></label>
             <div className="col-lg-5 file__wrapper">
               <button className="upload__button" disabled><BsPaperclip style={{ color: '#515357', marginRight: '13px' }} />{resumeLabel}</button>
               <input className="file__input" type='file' accept='application/pdf' onInput={(e) => onInputChage(e)} {...register('Resume')} />
